@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="actionBarTabBarStyle">@style/AppTheme.ActionBar.TabBar</item>
+        <item name="actionBarTabStyle">@style/AppTheme.ActionBar.TabView</item>
+        <item name="actionBarTabTextStyle">@style/AppTheme.ActionBar.TabText</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <!-- This is an ORANGE background -->
+        <!--<item name="android:background">#4B58A2</item>-->
+        <item name="displayOptions">showCustom</item>
+        <item name="android:displayOptions">showCustom</item>
+        <item name="android:actionBarSize">48.3dp</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TabBar" parent="Widget.AppCompat.Light.ActionBar.TabBar">
+        <!-- This is an ORANGE background -->
+        <item name="android:background">#ffffff</item>
+        <item name="android:actionBarSize">48dp</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TabView" parent="Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_bar_background</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TabText" parent="Widget.AppCompat.Light.ActionBar.TabText">
+
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+</resources>

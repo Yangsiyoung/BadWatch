@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hero"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5000000"
+    tools:context="com.example.yangsiyoung.badwatchtest.HeroActivity">
+
+    <ImageButton
+        android:id="@+id/btnCloseHeroActivity"
+        android:layout_width="44dp"
+        android:layout_height="44.7dp"
+        android:src="@drawable/fab_line_close"
+        android:background="#00000000"
+        android:layout_marginTop="30.3dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/layoutQuickRankChoice"
+        android:layout_width="147.3dp"
+        android:layout_height="25.3dp"
+        android:orientation="horizontal"
+        android:background="#f44336"
+        android:weightSum="100"
+        android:padding="1dp"
+        android:gravity="center"
+        android:layout_below="@+id/btnCloseHeroActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp">
+
+        <Button
+            android:id="@+id/btnShowRank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:text="경쟁전"
+            android:textSize="13.3sp"
+            android:textColor="@drawable/background_hero_rank_quick_textcolor_selector"
+            android:background="@drawable/background_hero_rank_quick_selector"
+            android:layout_gravity="left"/>
+
+        <Button
+            android:id="@+id/btnShowQuick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:text="빠른대전"
+            android:textSize="13.3sp"
+            android:textColor="@drawable/background_hero_rank_quick_textcolor_selector"
+            android:background="@drawable/background_hero_rank_quick_selector"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="159.3dp"
+        android:paddingLeft="36.3dp"
+        android:paddingRight="12.3dp"
+        android:layout_marginRight="21dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="81.3dp"
+            android:gravity="center">
+            
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForGenji"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/genji"
+                    android:background="#e5000000"/>
+                
+                <TextView
+                    android:id="@+id/txtGenji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Genji"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForMccree"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/mccree"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtMccree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Mccree"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForPharah"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/pharah"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtPharah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Pharah"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForReaper"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/reaper"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtReaper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Reaper"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="81.3dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForSoldier"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/soldier"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtSoldier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Soldier"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForTracer"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/tracer"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtTracer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Tracer"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForBastion"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/bastion"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtBastion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Bastion"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForHanzo"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/hanzo"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtHanzo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Hanzo"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="81.3dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForJunkrat"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/junkrat"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtJunkrat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Junkrat"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForMei"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/mei"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtMei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Mei"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForTorbjorn"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/torbjon"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtTorbjorn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Torbjorn"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForWidowmaker"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/widowmaker"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtWidowmaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Widowmaker"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="81.3dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForDva"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/dva"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtDva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Dva"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForReinhardt"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/reinhardt"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtReinhardt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Reinhardt"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForRoadhog"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/roadhog"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtRoadhog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Roadhog"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForWinston"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/winston"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtWinston"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Winston"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="81.3dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForZarya"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/zarya"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtZarya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Zarya"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="19.3dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnShowRecordForAna"
+                android:layout_width="53.3dp"
+                android:layout_height="59.3dp"
+                android:src="@drawable/ana"
+                android:background="#e5000000"/>
+
+            <TextView
+                android:id="@+id/txtAna"
+                android:layout_width="wrap_content"
+                android:layout_height="15.3dp"
+                android:layout_marginTop="1.7dp"
+                android:text="Ana"
+                android:textColor="#ffffff"
+                android:textSize="11sp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForLucio"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/lucio"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtLucio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Lucio"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForMercy"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/mercy"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtMercy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="Mercy"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="81.3dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForSymmetra"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/symmetra"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtSymmetra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Symmetra"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="19.3dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShowRecordForZenyatta"
+                    android:layout_width="53.3dp"
+                    android:layout_height="59.3dp"
+                    android:src="@drawable/zenyatta"
+                    android:background="#e5000000"/>
+
+                <TextView
+                    android:id="@+id/txtZenyatta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.3dp"
+                    android:layout_marginTop="1.7dp"
+                    android:text="Zenyatta"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+</HorizontalScrollView>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

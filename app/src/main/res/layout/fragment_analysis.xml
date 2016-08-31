@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="28.3dp"
+    android:paddingLeft="28.3dp"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="309.7dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="168.7dp">
+
+        <EditText
+            android:id="@+id/editId"
+            android:layout_width="247dp"
+            android:layout_height="62.7dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:background="@drawable/rectangle_24"
+            android:hint="배틀태그 입력"
+            android:textColorHint="#54000000"
+            android:paddingLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="62.7dp"
+            android:layout_height="62.7dp"
+            android:background="@drawable/line_oval_3"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="304.7dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:text="배틀넷 로그인"
+        android:textSize="15sp"
+        android:textColor="#8a212121"
+        android:background="@drawable/rectangle_283"
+        android:layout_below="@+id/layoutSearch"
+        android:layout_alignLeft="@+id/layoutSearch"
+        android:layout_alignStart="@+id/layoutSearch"
+    />
+
+    <CheckBox
+        android:id="@+id/checkBoxAutoLogin"
+        android:button="@drawable/backgroud_login_checkbox"
+        android:layout_width="27.7dp"
+        android:layout_height="24dp"
+        android:layout_alignLeft="@+id/layoutSearch"
+        android:layout_marginTop="129.3dp"/>
+
+    <TextView
+        android:layout_width="134dp"
+        android:layout_height="23.7dp"
+        android:layout_toRightOf="@+id/checkBoxAutoLogin"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="129dp"
+        android:gravity="left|center_vertical"
+        android:text="배틀태그로 자동로그인"
+        android:textColor="#8a212121"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>

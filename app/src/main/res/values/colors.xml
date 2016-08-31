@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <drawable name="actionBarBlue">#5b6abf</drawable>
+    <drawable name="actionBarGray">#e0e0e0</drawable>
+    <drawable name="heroRed">#f44336</drawable>
+    <drawable name="heroWhite">#ffffff</drawable>
+    <drawable name="heroBlack">#e5000000</drawable>
+</resources>

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="101.7dp"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="53.3dp"
+            android:layout_height="53.3dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="112dp"
+            android:layout_height="22.7dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#4b58a2"
+            android:gravity="left"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="96.7dp"/>
+        
+        <TextView
+            android:id="@+id/txtLevel"
+            android:layout_width="24.7dp"
+            android:layout_height="30.3dp"
+            android:text="레벨"
+            android:gravity="center_vertical|left"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="101.7dp"/>
+
+        <TextView
+            android:id="@+id/txtUserLevel"
+            android:layout_width="15.3dp"
+            android:layout_height="30.3dp"
+            android:text="80"
+            android:textSize="13.3sp"
+            android:gravity="center"
+            android:layout_marginTop="34.7dp"
+            android:layout_marginLeft="157dp"/>
+
+        <TextView
+            android:id="@+id/txtRank"
+            android:layout_width="37dp"
+            android:layout_height="30.3dp"
+            android:text="경쟁전"
+            android:gravity="center_vertical|left"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="101.7dp"/>
+
+        <TextView
+            android:id="@+id/txtUserRank"
+            android:layout_width="73.7dp"
+            android:layout_height="30.3dp"
+            android:text="경쟁전"
+            android:gravity="center"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="157dp"/>
+
+        <TextView
+            android:id="@+id/txtRefresh"
+            android:layout_width="36.3dp"
+            android:layout_height="16.7dp"
+            android:text="10 분전"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textColor="#8a212121"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="272.3dp"/>
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="27.7dp"
+            android:layout_height="27.7dp"
+            android:text=""
+            android:background="@drawable/rectangle_135_oval_27_line_line"
+            android:layout_marginTop="10.7dp"
+            android:layout_toRightOf="@+id/txtRefresh"
+            android:layout_marginLeft="7.7dp"
+            android:layout_toEndOf="@+id/txtRefresh"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="111.3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="7.7dp"
+        android:paddingRight="7.7dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnQuickRecord"
+                android:layout_width="174dp"
+                android:layout_height="40.3dp"
+                android:text="빠른대전"
+                android:textColor="#9b9b9b"
+                android:textSize="15sp"
+                android:background="@drawable/quick_rank_seletor"/>
+
+            <Button
+                android:id="@+id/btnRankRecord"
+                android:layout_width="174dp"
+                android:layout_height="40.3dp"
+                android:text="경쟁전"
+                android:textColor="#9b9b9b"
+                android:textSize="15sp"
+                android:background="@drawable/quick_rank_seletor"/>
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="33.7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="21.4dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/oval_4_path_71"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/txtComment"
+                android:layout_width="315.3dp"
+                android:layout_height="wrap_content"
+                android:text="안녕하세요"
+                android:textColor="#4b58a2"
+                android:textSize="13.3sp"
+                android:layout_marginTop="41.3dp"
+                android:paddingLeft="14.7dp"
+                android:paddingRight="15.3dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="22dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/card" />
+
+            <ImageView
+                android:layout_width="4.7dp"
+                android:layout_height="5.3dp"
+                android:layout_marginTop="174.3dp"
+                android:layout_marginLeft="26.7dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/txtMedal"
+                android:layout_width="24.7dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="163.3dp"
+                android:layout_marginLeft="38.3dp"
+                android:text = "메달"
+                android:textColor="#424242"
+                android:textSize="13.3sp"/>
+
+            <ImageView
+                android:id="@+id/imgGoldMedal"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="196dp"
+                android:layout_marginLeft="38dp"
+                android:background="@drawable/group"/>
+
+            <TextView
+                android:id="@+id/txtGoldMedal"
+                android:layout_width="25.7dp"
+                android:layout_height="18.3dp"
+                android:layout_marginTop="202.7dp"
+                android:layout_toRightOf="@+id/imgGoldMedal"
+                android:layout_marginLeft="8.7dp"
+                android:text=""
+                android:textColor="#8a212121"
+                android:textSize="10.7sp"/>
+
+            <ImageView
+                android:id="@+id/imgSilverMedal"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="196dp"
+                android:layout_toRightOf="@+id/txtGoldMedal"
+                android:layout_marginLeft="46.7dp"
+                android:background="@drawable/oval_52_oval_52_copy"/>
+
+            <TextView
+                android:id="@+id/txtSilverMedal"
+                android:layout_width="25.7dp"
+                android:layout_height="18.3dp"
+                android:layout_marginTop="202.7dp"
+                android:layout_toRightOf="@+id/imgSilverMedal"
+                android:layout_marginLeft="8.7dp"
+                android:text=""
+                android:textColor="#8a212121"
+                android:textSize="10.7sp"/>
+
+            <ImageView
+                android:id="@+id/imgBronzeMedal"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="196dp"
+                android:layout_marginLeft="240.3dp"
+                android:background="@drawable/oval_52_oval_52_copy_2" />
+
+            <TextView
+                android:id="@+id/txtBronzeMedal"
+                android:layout_width="25.7dp"
+                android:layout_height="18.3dp"
+                android:layout_marginTop="202.7dp"
+                android:layout_toRightOf="@id/imgBronzeMedal"
+                android:layout_marginLeft="8.7dp"
+                android:text=""
+                android:textColor="#8a212121"
+                android:textSize="10.7sp"/>
+
+            <LinearLayout
+                android:layout_marginTop="224dp"
+                android:orientation="vertical"
+                android:paddingLeft="26.7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="36.7dp">
+
+                <ImageView
+                    android:layout_width="4.7dp"
+                    android:layout_height="5.2dp"
+                    android:background="@drawable/card"/>
+
+                <TextView
+                    android:id="@+id/txtWinLosePercentage"
+                    android:layout_width="111dp"
+                    android:layout_height="36.7dp"
+                    android:text="승률"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center_vertical|left"
+                    android:textColor="#424242"
+                    android:textSize="13.3sp"/>
+
+                <TextView
+                    android:id="@+id/txtUserWinLosePercentage"
+                    android:layout_width="86.7dp"
+                    android:layout_height="36.7dp"
+                    android:text="123"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical|right"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtKillDeath"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="킬뎃"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserKillDeath"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtSoloKill"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="솔킬"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserSoloKill"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtKill"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="처치 최고기록"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserKill"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtMostMissonKill"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="임무처치 최고기록"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserMostMissonKill"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtMostMissionTime"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="임무기여시간 최고기록"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserMostMissionTime"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtMostOneCombo"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="원콤보 최고기록"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserMostOneCombo"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtMostSoloKill"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="킬딸 최고기록"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserMostSoloKill"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtMostDeal"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="딜 최고기록"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserMostDeal"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="36.7dp">
+
+                    <ImageView
+                        android:layout_width="4.7dp"
+                        android:layout_height="5.2dp"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/txtPlayTime"
+                        android:layout_width="111dp"
+                        android:layout_height="36.7dp"
+                        android:text="플레이 시간"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#424242"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUserPlayTime"
+                        android:layout_width="86.7dp"
+                        android:layout_height="36.7dp"
+                        android:text="123"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical|right"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="36.7dp">
+
+                        <ImageView
+                            android:layout_width="4.7dp"
+                            android:layout_height="5.2dp"
+                            android:background="@drawable/card"/>
+
+                        <TextView
+                            android:id="@+id/txtMostHeal"
+                            android:layout_width="111dp"
+                            android:layout_height="36.7dp"
+                            android:text="힐 최고기록"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center_vertical|left"
+                            android:textColor="#424242"
+                            android:textSize="13.3sp"/>
+
+                        <TextView
+                            android:id="@+id/txtUserMostHeal"
+                            android:layout_width="86.7dp"
+                            android:layout_height="36.7dp"
+                            android:text="123"
+                            android:layout_marginLeft="80dp"
+                            android:gravity="center_vertical|right"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/floatingButtonLookHeros"
+        android:src="@drawable/fab_line_line_line_line_copy"
+        android:background="#00ffffff"
+        android:layout_width="44.7dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|center_horizontal"/>
+
+</android.support.design.widget.CoordinatorLayout>
