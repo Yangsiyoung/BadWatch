@@ -6,17 +6,28 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Zenyatta extends RankCharacter{
+public class MercyRank extends RankCharacter{
 
-    @SerializedName("rank_best_transcendence_heal")
-    public String rankBestTranscendenceHeal;
+    @SerializedName("rank_resurrected")
+    public String rankResurrected;
 
-    public void setRankBestTranscendenceHeal(String rankBestTranscendenceHeal) {
-        this.rankBestTranscendenceHeal = rankBestTranscendenceHeal;
+    public void setRankResurrected(String rankResurrected) {
+        this.rankResurrected = rankResurrected;
     }
 
-    public String getRankBestTranscendenceHeal() {
-        return rankBestTranscendenceHeal;
+    public String getRankResurrected() {
+        return rankResurrected;
+    }
+
+    @SerializedName("rank_best_resurrected_in_game")
+    public String rankBestResurrectedInGame;
+
+    public void setRankBestResurrectedInGame(String rankBestResurrectedInGame) {
+        this.rankBestResurrectedInGame = rankBestResurrectedInGame;
+    }
+
+    public String getRankBestResurrectedInGame() {
+        return rankBestResurrectedInGame;
     }
 
     @SerializedName("rank_best_melee_lastshot_in_game")
@@ -30,37 +41,26 @@ public class Zenyatta extends RankCharacter{
         return rankBestMeleeLastShotInGame;
     }
 
-    @SerializedName("rank_best_onecombo")
-    public String rankBestOneCombo;
+    @SerializedName("rank_blaster_kill")
+    public String rankBlasterKill;
 
-    public void setRankBestOneCombo(String rankBestOneCombo) {
-        this.rankBestOneCombo = rankBestOneCombo;
+    public void setRankBlasterKill(String rankBlasterKill) {
+        this.rankBlasterKill = rankBlasterKill;
     }
 
-    public String getRankBestOneCombo() {
-        return rankBestOneCombo;
+    public String getRankBlasterKill() {
+        return rankBlasterKill;
     }
 
-    @SerializedName("rank_transcendence_heal")
-    public String rankTranscendenceHeal;
+    @SerializedName("rank_best_blaster_kill_in_game")
+    public String rankBestBlasterKillInGame;
 
-    public void setRankTranscendenceHeal(String rankTranscendenceHeal) {
-        this.rankTranscendenceHeal = rankTranscendenceHeal;
+    public void setRankBestBlasterKillInGame(String rankBestBlasterKillInGame) {
+        this.rankBestBlasterKillInGame = rankBestBlasterKillInGame;
     }
 
-    public String getRankTranscendenceHeal() {
-        return rankTranscendenceHeal;
-    }
-
-    @SerializedName("rank_attack_support")
-    public String rankAttackSupport;
-
-    public void setRankAttackSupport(String rankAttackSupport) {
-        this.rankAttackSupport = rankAttackSupport;
-    }
-
-    public String getRankAttackSupport() {
-        return rankAttackSupport;
+    public String getRankBestBlasterKillInGame() {
+        return rankBestBlasterKillInGame;
     }
 
     @SerializedName("rank_best_attack_support_in_game")

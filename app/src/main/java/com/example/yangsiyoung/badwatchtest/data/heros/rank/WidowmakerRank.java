@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Widowmaker extends QuickCharacter{
+public class WidowmakerRank extends QuickCharacter{
 
     @SerializedName("quick_venom_mine_kill")
     public String quickVenomMineKill;

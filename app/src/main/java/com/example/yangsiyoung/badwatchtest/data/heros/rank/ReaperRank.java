@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Reaper extends RankCharacter{
+public class ReaperRank extends RankCharacter{
 
     @SerializedName("rank_soul_consumed")
     public String rankSoulConsumed;

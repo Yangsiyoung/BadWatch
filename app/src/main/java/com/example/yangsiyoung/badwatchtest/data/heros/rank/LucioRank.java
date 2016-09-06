@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Lucio extends RankCharacter{
+public class LucioRank extends RankCharacter{
 
     @SerializedName("rank_sound_barrier")
     public String rankSoundBarrier;

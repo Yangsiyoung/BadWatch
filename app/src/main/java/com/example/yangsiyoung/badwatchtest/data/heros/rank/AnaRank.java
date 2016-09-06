@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Ana extends RankCharacter{
+public class AnaRank extends RankCharacter{
 
     @SerializedName("rank_best_melee_lastshot_in_game")
     public String rankBestMeleeLastShotInGame;

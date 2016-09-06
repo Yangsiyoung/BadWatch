@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Genji extends RankCharacter{
+public class GenjiRank extends RankCharacter{
 
     @SerializedName("rank_dragonblade_kill")
     public String rankDragonBladeKill;

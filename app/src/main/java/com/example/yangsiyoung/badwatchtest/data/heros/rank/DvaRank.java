@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Dva extends RankCharacter{
+public class DvaRank extends RankCharacter{
 
     @SerializedName("rank_mech_called")
     public String rankMechCalled;

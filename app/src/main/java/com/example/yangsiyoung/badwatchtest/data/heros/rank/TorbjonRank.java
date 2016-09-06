@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Torbjon extends RankCharacter{
+public class TorbjonRank extends RankCharacter{
 
     @SerializedName("rank_armor_pack_created")
     public String rankArmorPackCreated;

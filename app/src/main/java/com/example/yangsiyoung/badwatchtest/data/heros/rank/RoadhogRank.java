@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Roadhog extends RankCharacter{
+public class RoadhogRank extends RankCharacter{
 
     @SerializedName("rank_best_hook_in_game")
     public String rankBestHookInGame;

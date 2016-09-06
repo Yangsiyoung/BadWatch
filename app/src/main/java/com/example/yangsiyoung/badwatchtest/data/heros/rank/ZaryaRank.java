@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Zarya extends RankCharacter{
+public class ZaryaRank extends RankCharacter{
 
     @SerializedName("rank_damage_blocked")
     public String rankDamageBlocked;

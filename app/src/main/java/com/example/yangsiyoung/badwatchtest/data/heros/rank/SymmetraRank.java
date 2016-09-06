@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Symmetra extends RankCharacter{
+public class SymmetraRank extends RankCharacter{
 
     @SerializedName("rank_turret_kill")
     public String rankTurretKill;

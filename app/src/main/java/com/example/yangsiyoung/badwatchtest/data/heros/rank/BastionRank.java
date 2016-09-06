@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Yang Si Young on 2016-08-11.
  */
-public class Bastion extends RankCharacter{
+public class BastionRank extends RankCharacter{
 
     @SerializedName("rank_recon_kill")
     public String rankReconKill;
