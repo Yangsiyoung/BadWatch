@@ -41,4 +41,52 @@ public class Lucio extends QuickCharacter{
         return quickBestMeleeLastShotInGame;
     }
 
+    @SerializedName("quick_attack_support")
+    public String quickAttackSupport;
+
+    public void setQuickAttackSupport(String quickAttackSupport) {
+        this.quickAttackSupport = quickAttackSupport;
+    }
+
+    public String getQuickAttackSupport() {
+        return quickAttackSupport;
+    }
+
+    @SerializedName("quick_best_attack_support_in_game")
+    public String quickBestAttackSupportInGame;
+
+    public void setQuickBestAttackSupportInGame(String quickBestAttackSupportInGame) {
+        this.quickBestAttackSupportInGame = quickBestAttackSupportInGame;
+    }
+
+    public String getQuickBestAttackSupportInGame() {
+        return quickBestAttackSupportInGame;
+    }
+
+    @SerializedName("quick_defence_support")
+    public String quickDefenceSupport;
+
+    public void setQuickDefenceSupport(String quickDefenceSupport) {
+        this.quickDefenceSupport = quickDefenceSupport;
+    }
+
+    public String getQuickDefenceSupport() {
+        return quickDefenceSupport;
+    }
+
+    @SerializedName("quick_best_defence_support_in_game")
+    public String quickBestDefenceSupportInGame;
+
+    public void setQuickBestDefenceSupportInGame(String quickBestDefenceSupportInGame) {
+        this.quickBestDefenceSupportInGame = quickBestDefenceSupportInGame;
+    }
+
+    public String getQuickBestDefenceSupportInGame() {
+        return quickBestDefenceSupportInGame;
+    }
+
+
+
+
+
 }

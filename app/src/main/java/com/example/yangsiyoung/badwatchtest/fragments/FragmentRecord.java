@@ -131,7 +131,7 @@ public class FragmentRecord extends Fragment {
         Glide.with(getActivity().getApplicationContext()).load(userQuickInfo.getAvatarUrl()).into(imgProfile);
         txtId.setText(userQuickInfo.getName());
         txtUserLevel.setText(userQuickInfo.getLevel());
-        txtUserRank.setText(userQuickInfo.getPoint());
+        txtUserRank.setText("실력 평점 " + userQuickInfo.getPoint());
         txtComment.setText(userQuickInfo.getQuickReputation());
         txtGoldMedal.setText(userQuickInfo.getQuickGoldMedal());
         txtSilverMedal.setText(userQuickInfo.getQuickSilverMedal());
@@ -181,7 +181,7 @@ public class FragmentRecord extends Fragment {
                  Glide.with(getActivity().getApplicationContext()).load(userQuickInfo.getAvatarUrl()).into(imgProfile);
                  txtId.setText(userQuickInfo.getName());
                  txtUserLevel.setText(userQuickInfo.getLevel());
-                 txtUserRank.setText(userQuickInfo.getPoint());
+                 txtUserRank.setText("실력 평점 " + userQuickInfo.getPoint());
                  txtComment.setText(userQuickInfo.getQuickReputation());
                  txtGoldMedal.setText(userQuickInfo.getQuickGoldMedal());
                  txtSilverMedal.setText(userQuickInfo.getQuickSilverMedal());
@@ -205,7 +205,7 @@ public class FragmentRecord extends Fragment {
                  Glide.with(getActivity().getApplicationContext()).load(userRankInfo.getAvatarUrl()).into(imgProfile);
                  txtId.setText(userRankInfo.getName());
                  txtUserLevel.setText(userRankInfo.getLevel());
-                 txtUserRank.setText(userRankInfo.getPoint());
+                 txtUserRank.setText("실력 평점 " + userRankInfo.getPoint());
                  txtComment.setText(userRankInfo.getRankReputation());
                  txtGoldMedal.setText(userRankInfo.getRankGoldMedal());
                  txtSilverMedal.setText(userRankInfo.getRankSilverMedal());

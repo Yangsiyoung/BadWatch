@@ -74,17 +74,6 @@ public class BastionRank extends RankCharacter{
         return rankBestReconKillInGame;
     }
 
-    @SerializedName("rank_environment_death")
-    public String rankEnvironmentDeath;
-
-    public void setRankEnvironmentDeath(String rankEnvironmentDeath) {
-        this.rankEnvironmentDeath = rankEnvironmentDeath;
-    }
-
-    public String getRankEnvironmentDeath() {
-        return rankEnvironmentDeath;
-    }
-
     @SerializedName("rank_best_onecombo")
     public String rankBestOneCombo;
 

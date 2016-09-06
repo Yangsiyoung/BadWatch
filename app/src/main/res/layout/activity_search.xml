@@ -6,23 +6,25 @@
     tools:context=".SearchActivity">
 
 
-    <EditText
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:id="@+id/editId"
-        android:textColor="#000000"
-        android:textSize="12dp"
-        android:hint="닉네임#배틀태그"
-        android:textColorHint="#000000"
-        android:paddingLeft="5dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="96dp"
+        android:id="@+id/textView2" />
 
     <Button
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:text="Login"
-        android:id="@+id/btnLogin"
-        android:layout_below="@+id/editId"
-        android:layout_centerHorizontal="true" />
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="64dp"
+        android:id="@+id/button4" />
 </RelativeLayout>

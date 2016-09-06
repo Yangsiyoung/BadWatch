@@ -41,15 +41,15 @@ public class Mccree extends QuickCharacter{
         return quickFanTheHammerKill;
     }
 
-    @SerializedName("quick_ccbest_melee_lastshot_in_game")
-    public String quickCcBestMeleeLastShotInGame;
+    @SerializedName("quick_best_melee_lastshot_in_game")
+    public String quickBestMeleeLastShotInGame;
 
-    public void setQuickCcBestMeleeLastShotInGame(String quickCcBestMeleeLastShotInGame) {
-        this.quickCcBestMeleeLastShotInGame = quickCcBestMeleeLastShotInGame;
+    public void setQuickBestMeleeLastShotInGame(String quickBestMeleeLastShotInGame) {
+        this.quickBestMeleeLastShotInGame = quickBestMeleeLastShotInGame;
     }
 
-    public String getQuickCcBestMeleeLastShotInGame() {
-        return quickCcBestMeleeLastShotInGame;
+    public String getQuickBestMeleeLastShotInGame() {
+        return quickBestMeleeLastShotInGame;
     }
 
     @SerializedName("quick_best_onecombo")

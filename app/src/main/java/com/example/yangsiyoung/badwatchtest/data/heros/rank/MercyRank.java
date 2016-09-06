@@ -63,6 +63,17 @@ public class MercyRank extends RankCharacter{
         return rankBestBlasterKillInGame;
     }
 
+    @SerializedName("rank_attack_support")
+    public String rankAttackSupport;
+
+    public void setRankAttackSupport(String rankAttackSupport) {
+        this.rankAttackSupport = rankAttackSupport;
+    }
+
+    public String getRankAttackSupport() {
+        return rankAttackSupport;
+    }
+
     @SerializedName("rank_best_attack_support_in_game")
     public String rankBestAttackSupportInGame;
 

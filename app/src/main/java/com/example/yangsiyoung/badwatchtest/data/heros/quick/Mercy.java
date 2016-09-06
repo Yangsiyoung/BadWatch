@@ -63,6 +63,17 @@ public class Mercy extends QuickCharacter{
         return quickBestBlasterKillInGame;
     }
 
+    @SerializedName("quick_attack_support")
+    public String quickAttackSupport;
+
+    public void setQuickAttackSupport(String quickAttackSupport) {
+        this.quickAttackSupport = quickAttackSupport;
+    }
+
+    public String getQuickAttackSupport() {
+        return quickAttackSupport;
+    }
+
     @SerializedName("quick_best_attack_support_in_game")
     public String quickBestAttackSupportInGame;
 

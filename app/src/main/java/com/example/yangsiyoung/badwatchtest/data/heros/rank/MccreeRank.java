@@ -41,15 +41,15 @@ public class MccreeRank extends RankCharacter{
         return rankFanTheHammerKill;
     }
 
-    @SerializedName("rank_ccbest_melee_lastshot_in_game")
-    public String rankCcBestMeleeLastShotInGame;
+    @SerializedName("rank_best_melee_lastshot_in_game")
+    public String rankBestMeleeLastShotInGame;
 
-    public void setRankCcBestMeleeLastShotInGame(String rankCcBestMeleeLastShotInGame) {
-        this.rankCcBestMeleeLastShotInGame = rankCcBestMeleeLastShotInGame;
+    public void setRankBestMeleeLastShotInGame(String rankBestMeleeLastShotInGame) {
+        this.rankBestMeleeLastShotInGame = rankBestMeleeLastShotInGame;
     }
 
-    public String getRankCcBestMeleeLastShotInGame() {
-        return rankCcBestMeleeLastShotInGame;
+    public String getRankBestMeleeLastShotInGame() {
+        return rankBestMeleeLastShotInGame;
     }
 
     @SerializedName("rank_best_onecombo")

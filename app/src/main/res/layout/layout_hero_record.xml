@@ -1,5 +1,1358 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="23dp"
+    android:layout_marginRight="23dp"
+    android:layout_marginBottom="30dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutComment"
+        android:layout_width="match_parent"
+        android:layout_height="210.3dp"
+        android:background="#5b6abf">
+
+    <ImageView
+        android:id="@+id/imgHero"
+        android:src="@drawable/ana"
+        android:layout_width="23.3dp"
+        android:layout_height="26.3dp"
+        android:layout_marginLeft="108.3dp"
+        android:layout_marginTop="10.5dp"/>
+
+    <TextView
+        android:id="@+id/txtHero"
+        android:layout_width="54dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/imgHero"
+        android:layout_marginLeft="8.3dp"
+        android:layout_alignTop="@+id/imgHero"
+        android:text="Ana"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        />
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@+id/txtHero"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="13.7dp"
+            android:layout_marginTop="13.7dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgHero"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="33.7dp"
+            android:layout_marginRight="33.7dp"
+            android:gravity="center"
+            android:layout_marginTop="21.7dp">
+
+        <TextView
+            android:id="@+id/txtHeroWinLosePercentage"
+            android:layout_width="24.7dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="승률"
+            android:textSize="13.3sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txtHeroKillDeathPercentage"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/txtHeroWinLosePercentage"
+            android:layout_marginLeft="44dp"
+            android:text="K/D"
+            android:textSize="13.3sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txtHeroGameCount"
+            android:layout_width="24.7dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/txtHeroKillDeathPercentage"
+            android:layout_marginLeft="40.3dp"
+            android:text="게임"
+            android:textSize="13.3sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txtHeroAvgFloodTime"
+            android:layout_width="53dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/txtHeroGameCount"
+            android:layout_marginLeft="34.7dp"
+            android:text="평균 폭주"
+            android:textSize="13.3sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroWinLosePercentage"
+            android:layout_width="26dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtHeroWinLosePercentage"
+            android:layout_alignLeft="@+id/txtHeroWinLosePercentage"
+            android:layout_marginTop="2dp"
+            android:textSize="13.3sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroKillDeathPercentage"
+            android:layout_width="38.3dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtHeroWinLosePercentage"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/txtUserHeroWinLosePercentage"
+            android:layout_marginLeft="36.3dp"
+            android:textSize="13.3sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroGameCount"
+            android:layout_width="17dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtHeroWinLosePercentage"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/txtUserHeroKillDeathPercentage"
+            android:layout_marginLeft="38dp"
+            android:textSize="13.3sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroAvgFloodTime"
+            android:layout_width="23dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtHeroWinLosePercentage"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/txtUserHeroGameCount"
+            android:layout_marginLeft="51.3dp"
+            android:textSize="13.3sp"
+            android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/txtUserHeroKillDeath"
+                android:layout_width="41.7dp"
+                android:layout_height="12dp"
+                android:gravity="center"
+                android:layout_below="@+id/txtUserHeroKillDeathPercentage"
+                android:layout_marginTop="0.7dp"
+                android:layout_alignLeft="@+id/txtHeroKillDeathPercentage"
+                android:textSize="8sp"
+                android:textColor="#80ffffff"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="78.7dp"
+                android:layout_below="@+id/txtUserHeroKillDeath"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imgBadWatchIcon"
+                    android:layout_width="24.7dp"
+                    android:layout_height="26.7dp"
+                    android:layout_marginLeft="10.7dp"
+                    android:layout_marginTop="15.7dp"
+                    android:src="@drawable/ana"
+                    />
+
+                <TextView
+                    android:id="@+id/txtComment"
+                    android:layout_width="223.3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgBadWatchIcon"
+                    android:layout_alignTop="@+id/imgBadWatchIcon"
+                    android:gravity="left"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="#424242"
+                    android:layout_marginLeft="8.7dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/layoutComment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="21.7dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/imgHeroGoldMedal"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:background="@drawable/group"/>
+
+        <TextView
+            android:id="@+id/txtHeroGoldMedal"
+            android:layout_width="25.7dp"
+            android:layout_height="18.3dp"
+            android:layout_marginTop="6.7dp"
+            android:layout_toRightOf="@+id/imgHeroGoldMedal"
+            android:layout_marginLeft="8.7dp"
+            android:text=""
+            android:textColor="#8a212121"
+            android:textSize="10.7sp"/>
+
+        <ImageView
+            android:id="@+id/imgHeroSilverMedal"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@+id/txtHeroGoldMedal"
+            android:layout_marginLeft="36.7dp"
+            android:background="@drawable/oval_52_oval_52_copy"/>
+
+        <TextView
+            android:id="@+id/txtHeroSilverMedal"
+            android:layout_width="25.7dp"
+            android:layout_height="18.3dp"
+            android:layout_marginTop="6.7dp"
+            android:layout_toRightOf="@+id/imgHeroSilverMedal"
+            android:layout_marginLeft="8.7dp"
+            android:text=""
+            android:textColor="#8a212121"
+            android:textSize="10.7sp"/>
+
+        <ImageView
+            android:id="@+id/imgHeroBronzeMedal"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@+id/txtHeroSilverMedal"
+            android:layout_marginLeft="37dp"
+            android:background="@drawable/oval_52_oval_52_copy_2" />
+
+        <TextView
+            android:id="@+id/txtHeroBronzeMedal"
+            android:layout_width="25.7dp"
+            android:layout_height="18.3dp"
+            android:layout_marginTop="6.7dp"
+            android:layout_toRightOf="@id/imgHeroBronzeMedal"
+            android:layout_marginLeft="8.7dp"
+            android:text=""
+            android:textColor="#8a212121"
+            android:textSize="10.7sp"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtHeroKill"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="처치"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroKill"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroLastShot"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="결정타"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroLastShot"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroSoloKill"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="단독 처치"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSoloKill"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroDeal"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="준 피해"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroDeal"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroMissonKill"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="임무 기여 처치"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroMissonKill"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroOneCombo"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="동시 처치"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroOneCombo"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroMeleeLastShot"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="근접 공격 결정타"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroMeleeLastShot"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroCritical"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="치명타"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroCritical"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text="123123"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroCriticalAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="치명타 명중률"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroCriticalAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text="123123"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="명중률"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text="123123"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroHeal"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="치유"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroHeal"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroDestroyTelePort"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="순간이동기 파괴"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroDestroyTelePort"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroSelfHeal"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="자가 치유"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSelfHeal"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestKillInLife"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="처치 - 한 목숨 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestKillInLife"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text="123123"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestDealInLife"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="준 피해 - 한 목숨 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestDealInLife"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestHealInLife"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="치유 - 한 목숨 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestHealInLife"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestDealInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="준 피해 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestDealInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestHealInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="치유 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestHealInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestKillInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="처치 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestKillInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestLastShotInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="결정타 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestLastShotInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestMissionKillInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="임무 기여 처치 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestMissionKillInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestMissionTimeInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="임무 기여 시간 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestMissionTimeInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestSoloKillInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="단독 처치 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestSoloKillInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestCriticalInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="결정타 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroBestCriticalInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroBestSelfHealInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="자가 치유 - 한 게임 최고기록"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtHeroUserBestSelfHealInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="죽음"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroEnvironmentDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="환경 요소로 죽음"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroEnvironmentDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroCard"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="칭찬 카드"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroCard"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroPlayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="플레이 시간"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroPlayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroWin"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="승리한 게임"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroWin"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroMissionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="임무 기여 시간"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroMissionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text="123123"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp">
+
+        <TextView
+            android:id="@+id/txtHeroFloodTime"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text="폭주 시간"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroFloodTime"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill1"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill1"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill2"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill2"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill3"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill3"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill4"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill4"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill5"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill5"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill6"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill6"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill7"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill7"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill8"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill8"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill9"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill9"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill10"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill10"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeroSkill11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeroSkill11"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtUserHeroSkill11"
+            android:layout_width="wrap_content"
+            android:layout_height="17.3dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+</ScrollView>
 
 </RelativeLayout>

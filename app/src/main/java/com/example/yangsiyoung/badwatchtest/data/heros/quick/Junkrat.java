@@ -74,17 +74,6 @@ public class Junkrat extends QuickCharacter{
         return quickTrappedEnemyPerMinute;
     }
 
-    @SerializedName("quick_environment_death")
-    public String quickEnvironmentDeath;
-
-    public void setQuickEnvironmentDeath(String quickEnvironmentDeath) {
-        this.quickEnvironmentDeath = quickEnvironmentDeath;
-    }
-
-    public String getQuickEnvironmentDeath() {
-        return quickEnvironmentDeath;
-    }
-
     @SerializedName("quick_best_onecombo")
     public String quickBestOneCombo;
 

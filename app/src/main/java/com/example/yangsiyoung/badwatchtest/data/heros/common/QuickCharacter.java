@@ -436,4 +436,15 @@ public class QuickCharacter {
         return quickWinRate;
     }
 
+    @SerializedName("reputation")
+    public String reputation;
+
+    public void setReputation(String reputation){
+        this.reputation = reputation;
+    }
+
+    public String getReputation(){
+        return reputation;
+    }
+
 }

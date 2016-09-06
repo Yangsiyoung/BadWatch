@@ -436,4 +436,14 @@ public class RankCharacter {
         return rankWinRate;
     }
 
+    @SerializedName("reputation")
+    public String reputation;
+
+    public void setReputation(String reputation){
+        this.reputation = reputation;
+    }
+
+    public String getReputation(){
+        return reputation;
+    }
 }
