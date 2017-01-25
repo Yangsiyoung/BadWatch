@@ -16,8 +16,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.yangsiyoung.badwatchtest.BattleNetLoginActivity;
 import com.example.yangsiyoung.badwatchtest.MainActivity;
 import com.example.yangsiyoung.badwatchtest.R;
+import com.example.yangsiyoung.badwatchtest.data.heros.code.RequestCode;
+import com.example.yangsiyoung.badwatchtest.data.heros.code.ResultCode;
 import com.example.yangsiyoung.badwatchtest.data.heros.user.UserQuickInfo;
 import com.example.yangsiyoung.badwatchtest.data.heros.user.UserRankInfo;
 import com.google.gson.Gson;
@@ -39,7 +42,7 @@ import okhttp3.Response;
 /**
  * Created by Yang Si Young on 2016-08-14.
  */
-public class FragmentAnalysis extends Fragment {
+public class FragmentAnalysis extends Fragment implements RequestCode,ResultCode{
 
     @Bind(R.id.editId)
     EditText editId;
@@ -49,6 +52,9 @@ public class FragmentAnalysis extends Fragment {
 
     @Bind(R.id.checkBoxAutoLogin)
     CheckBox checkBoxAutoLogin;
+
+    @Bind(R.id.btnLogin)
+    Button btnLogin;
 
     private SharedPreferences sharedPreferencesAutoLogin;
 
@@ -63,7 +69,7 @@ public class FragmentAnalysis extends Fragment {
     String userId;
 
     public interface ReloadFragmentForRecord {
-        void reload(UserQuickInfo userQuickInfo, UserRankInfo userRankInfo);
+        void reload(UserQuickInfo userQuickInfo, UserRankInfo userRankInfo, String UserId);
     }
 
     ;
@@ -92,6 +98,7 @@ public class FragmentAnalysis extends Fragment {
         //여기서 view를 초기화해주고, Listener도 달아준다
         // ButterKnife.bind(view);
         btnSearch.setOnClickListener(onClickListener);
+        btnLogin.setOnClickListener(onClickListener);
     }
 
     @Override
@@ -103,16 +110,26 @@ public class FragmentAnalysis extends Fragment {
     View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            userId = editId.getText().toString();
+            switch (view.getId()) {
 
-            if (!userId.isEmpty()) {
-                userId = userId.replace("#", "-");
-                String urlUser = url + userId;
+                case R.id.btnSearch:
+                userId = editId.getText().toString();
 
-                new ConnectServer().run(urlUser, "quick");
+                if (!userId.isEmpty()) {
+                    userId = userId.replace("#", "-");
+                    String urlUser = url + userId;
 
-            } else {
-                Toast.makeText(getView().getContext(), "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                    new ConnectServer().run(urlUser, "quick");
+
+                } else {
+                    Toast.makeText(getView().getContext(), "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                }
+                    break;
+
+                case R.id.btnLogin:
+                    Intent intent = new Intent(getView().getContext(), BattleNetLoginActivity.class);
+                    startActivityForResult(intent, BATTLE_NET_LOGIN);
+                    break;
             }
 
         }
@@ -176,7 +193,7 @@ public class FragmentAnalysis extends Fragment {
                             getActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    reloadFragmentForRecord.reload(userQuickInfo, userRankInfo);
+                                    reloadFragmentForRecord.reload(userQuickInfo, userRankInfo, userId);
                                 }
                             });
 
