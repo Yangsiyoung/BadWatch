@@ -1,12 +1,12 @@
-package com.example.yangsiyoung.badwatchtest.data.heros.board;
+package com.example.yangsiyoung.badwatchtest.data.heros.youtube;
 
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by Yang Si Young on 2016-09-20.
+ * Created by Yang Si Young on 2016-11-02.
  */
 
-public class BoardCommentData {
+public class YoutubeCommentData {
 
     @SerializedName("comment_id")
     private String commentId;
@@ -38,18 +38,7 @@ public class BoardCommentData {
     }
 
     public String getReplyCount(){
-        return  replyCount;
-    }
-
-    @SerializedName("avatar")
-    private String avatar;
-
-    public void setAvatar(String avatar){
-        this.avatar = avatar;
-    }
-
-    public String getAvatar(){
-        return avatar;
+        return replyCount;
     }
 
     @SerializedName("name")
@@ -63,14 +52,26 @@ public class BoardCommentData {
         return name;
     }
 
+    @SerializedName("avatar")
+    private String avatar;
+
+    public void setAvatar(String avatar){
+        this.avatar = avatar;
+    }
+
+    public String getAvatar(){
+        return avatar;
+    }
+
     @SerializedName("written_time")
-    private String writtenTime;
+    String writtenTime;
 
     public void setWrittenTime(String writtenTime){
         this.writtenTime = writtenTime;
     }
 
     public String getWrittenTime(){
-        return writtenTime;
+        return  writtenTime;
     }
+
 }

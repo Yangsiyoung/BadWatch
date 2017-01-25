@@ -1,26 +1,28 @@
-package com.example.yangsiyoung.badwatchtest.data.heros.board;
+package com.example.yangsiyoung.badwatchtest.data.heros.youtube;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
- * Created by Yang Si Young on 2016-09-17.
+ * Created by Yang Si Young on 2016-11-02.
  */
 
-public class BoardMoreData {
+public class YoutubeData implements Serializable {
 
-    @SerializedName("article_id")
-    private String articleId;
+    @SerializedName("youtube_id")
+    String youtubeId;
 
-    public void setArticleId(String articleId){
-        this.articleId = articleId;
+    public void setYoutubeId(String youtubeId){
+        this.youtubeId = youtubeId;
     }
 
-    public String getArticleId(){
-        return articleId;
+    public String getYoutubeId(){
+        return youtubeId;
     }
 
     @SerializedName("title")
-    private String title;
+    String title;
 
     public void setTitle(String title){
         this.title = title;
@@ -31,73 +33,18 @@ public class BoardMoreData {
     }
 
     @SerializedName("content")
-    private String content;
+    String content;
 
     public void setContent(String content){
         this.content = content;
     }
 
     public String getContent(){
-        return  content;
-    }
-
-    @SerializedName("comment_count")
-    private String commentCount;
-
-    public void setCommentCount(String commentCount){
-        this.commentCount = commentCount;
-    }
-
-    public String getCommentCount(){
-        return commentCount;
-    }
-
-    @SerializedName("hit_count")
-    private String hitCount;
-
-    public void setHitCount(String hitCount){
-        this.hitCount = hitCount;
-    }
-
-    public String getHitCount(){
-        return hitCount;
-    }
-
-    @SerializedName("like_count")
-    private String likeCount;
-
-    public void setLikeCount(String likeCount){
-        this.likeCount = likeCount;
-    }
-
-    public String getLikeCount(){
-        return likeCount;
-    }
-
-    @SerializedName("board_type")
-    private String boardType;
-
-    public void setBoardType(String boardType){
-        this.boardType = boardType;
-    }
-
-    public String getBoardType(){
-        return boardType;
-    }
-
-    @SerializedName("written_time")
-    private String writtenTime;
-
-    public void setWrittenTime(String writtenTime){
-        this.writtenTime = writtenTime;
-    }
-
-    public String getWrittenTime(){
-        return writtenTime;
+        return content;
     }
 
     @SerializedName("member_id")
-    private String memberId;
+    String memberId;
 
     public void setMemberId(String memberId){
         this.memberId = memberId;
@@ -108,7 +55,7 @@ public class BoardMoreData {
     }
 
     @SerializedName("name")
-    private String name;
+    String name;
 
     public void setName(String name){
         this.name = name;
@@ -118,8 +65,85 @@ public class BoardMoreData {
         return name;
     }
 
+    @SerializedName("avatar")
+    String avatar;
+
+    public void setAvatar(String avatar){
+        this.avatar = avatar;
+    }
+
+    public String getAvatar(){
+        return avatar;
+    }
+
+    @SerializedName("youtube_key")
+    String youtubeKey;
+
+    public void setYoutubeKey(String youtubeKey){
+        this.youtubeKey = youtubeKey;
+    }
+
+    public String getYoutubeKey(){
+        return youtubeKey;
+    }
+
+    @SerializedName("thumbnail")
+    String thumbnail;
+
+    public void setThumbnail(String thumbnail){
+        this.thumbnail = thumbnail;
+    }
+
+    public String getThumbnail(){
+        return thumbnail;
+    }
+
+    @SerializedName("comment_count")
+    String commentCount;
+
+    public void setCommentCount(String commentCount){
+        this.commentCount = commentCount;
+    }
+
+    public String getCommentCount(){
+        return commentCount;
+    }
+
+    @SerializedName("hit_count")
+    String hitCount;
+
+    public void setHitCount(String hitCount){
+        this.hitCount = hitCount;
+    }
+
+    public String getHitCount(){
+        return hitCount;
+    }
+
+    @SerializedName("like_count")
+    String likeCount;
+
+    public void setLikeCount(String likeCount){
+        this.likeCount = likeCount;
+    }
+
+    public String getLikeCount(){
+        return likeCount;
+    }
+
+    @SerializedName("written_time")
+    String writtenTime;
+
+    public void setWrittenTime(String writtenTime){
+        this.writtenTime = writtenTime;
+    }
+
+    public String getWrittenTime(){
+        return writtenTime;
+    }
+
     @SerializedName("authentication")
-    private boolean authentication;
+    boolean authentication;
 
     public void setAuthentication(boolean authentication){
         this.authentication = authentication;
@@ -130,7 +154,7 @@ public class BoardMoreData {
     }
 
     @SerializedName("like_status")
-    private boolean likeStatus;
+    boolean likeStatus;
 
     public void setLikeStatus(boolean likeStatus){
         this.likeStatus = likeStatus;
@@ -139,5 +163,4 @@ public class BoardMoreData {
     public boolean getLikeStatus(){
         return likeStatus;
     }
-
 }
